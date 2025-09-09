@@ -23,13 +23,24 @@ header {
   padding: 15px 60px;
 }
 
-.logo img {
-  height: 60px;   /* Adjust size */
-  width: auto;    /* Keeps proportions */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 60px;        /* smaller for navbar */
+  height: 60px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;
+  border: 2px solid #e91e63; /* optional pink border */
+  margin-right: 10px;
 }
 
 .logo span {
   color: #333;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .nav-links {
@@ -71,6 +82,14 @@ header {
   position: relative;
   z-index: 1;
 }
+.hero-logo {
+  width: 120px;       /* larger for hero */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-bottom: 20px;
+}
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -79,6 +98,7 @@ header {
   font-size: 18px;
   margin-bottom: 30px;
 }
+
 
 /* Button */
 .btn {
